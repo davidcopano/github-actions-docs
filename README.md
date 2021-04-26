@@ -1,7 +1,7 @@
 # Github Actions Docs
 
-Documentación propia de Github Actions.
+Github Actions own documentation.
 
-| Acción | Pasos para realizar la acción |
+| Action | Steps to perform the action |
 | ------------- | ------------- |
-| Subir release a Github | 1) En el archivo `.github\workflows\<NOMBRE_ARCHIVO>.yml` añadir lo siguiente (entre las claves `name` y `jobs`): <br> ![on push tags](on-push-tags.png?raw=true "on push tags")<br> Ejemplo completo: <br> ![publish release](publish-release.png?raw=true "publish release") <br>2) Crear el tag con este comando (reemplazar las X con la versión que sea): `git tag vX.X.X`<br> 3) Hacer commit de todos los cambios que vayan a incluirse en el tag. <br> 4) Subir el tag creado con el siguiente comando: `git push --tags` <br> La acción del archivo .yml se ejecutará una vez se cree el tag y se suba al repositorio (pasos 2, 3 y 4) |
+| Upload release to Github | 1) In the `.github/workflows/<FILE_NAME>.yml` file add the following (between the `name` and `jobs` keys): <br> ![on push tags](on-push-tags.png?raw=true "on push tags")<br> Full example: <br> ![publish release](publish-release.png?raw=true "publish release") <br>2) Create the tag with this command (replace the X with any version): `git tag vX.X.X.X`.<br> 3) Commit all changes to be included in the tag. <br> 4) Upload the created tag with the following command: `git push --tags`. <br> The action of the .yml file will be executed once the tag is created and uploaded to the repository (steps 2, 3 and 4). |
